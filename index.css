@@ -1,0 +1,28 @@
+.background {
+    background-color:bisque;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+header {
+    float:left;
+    background-color:powderblue;
+    width:100%;
+    margin: 0 0 5% 0;
+}
+h1{
+    color:white;
+    font-family:calibri;
+    font-size:36px;
+
+}
+
+nav {
+    float:right;
+    font-family:calibri;
+    color:gray;
+    display:inline;
+}
+
+nav a {
+    display:block;
+}
