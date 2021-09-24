@@ -1,19 +1,68 @@
 <!DOCTYPE html>
-<html>
+<!-- set up basic skeleton with shift+1+tab-->
+<html lang="en">
 <head>
-    <link rel="stylesheet" href="index.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll Website</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body class="background">
-    <header>
-        <h1>Kylie Lee</h1>
-        <nav>
-            <ul>
-                <li><a href="" class="selected">HOME</a></li>
-                <li><a href="" class="selected">PROJECTS</a></li>
+<body>
+    <!-- Nav Bar -->
+    <nav class="navbar"> <!-- nav.navbar -->
+        <div class="navbar__container"> <!-- .navbar__container  -->
+            <a href="#home" id="navbar__logo"> <!-- a#navbar__logo  -->
+                COLOR
+            </a>
+            <div class="navbar__toggle" id="mobile-menu"> <!-- .navbar__toggle#mobile-menu -->
+                <!-- to copy down shift+alt+down  -->
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div> 
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="#home" class="navbar__links" id="home-page">HOME</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#about" class="navbar__links" id="home-page">ABOUT</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#project" class="navbar__links" id="home-page">PROJECTS</a>
+                </li>
+                <li class="navbar__btn">
+                    <a href="#contact" class="button" id="home-page">CONTACT</a>
+                </li>
+                
             </ul>
-        </nav>
-    </header>
-<h2>Hello World</h2>
-<p>I'm hosted with GitHub Pages.</p>
+        </div>
+    </nav> 
+    <!-- Hero Section -->
+    <div class="hero" id="home">
+        <div class="hero__container">
+            <h1 class="hero__heading">
+                Choose your <span>colors</span>
+            </h1>
+            <p class="hero__desc">Unlimited Possibilities</p>
+            <button class="main__btn"><a href="#">Explore</a></button>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <div class="main" id="about">
+        <div class="main__container">
+            <div class="main__image--container">
+                <div class="main__img--card">ICON</div>
+            </div>
+            <div class="main__content">
+                <h1>What do we do?</h1>
+                <h2>About Me</h2>
+                <p>Lorem Ipsum</p>
+                <button class="main__btn"><a href="#">Button</a></button>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
 </body>
 </html>
