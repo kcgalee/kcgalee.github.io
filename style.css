@@ -6,8 +6,9 @@
     scroll-behavior: smooth;
 }
 
+
 .navbar {
-    background: #131313;
+    background: #EAEAEA;
     height: 80px;
     display: flex;
     justify-content: center;
@@ -30,8 +31,8 @@
 }
 
 #navbar__logo {
-    background-color: #ff8177;
-    background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+    background-color: #BF8B78;
+    background-image: linear-gradient(to top, #BF8B78; 0%, #ffb199 100%);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -55,7 +56,7 @@
 }
 
 .navbar__links {
-    color:white;
+    color:gray;
     display:flex;
     align-items: center;
     justify-content: center;
@@ -83,15 +84,15 @@
     border: none;
     outline: none;
     border-radius: 10px;
-    background: #833ab4;
-    background: -webkit-linear-gradient(to right, #fbc045,#fd1d1d, #833ab4);
-    background: linear-gradient(to right, #fbc045,#fd1d1d, #833ab4);
+    background: #BF8B78;;
+    background: -webkit-linear-gradient(to right, #F8E9A1,#F76C6C #BF8B78);
+    background: linear-gradient(to right, #F8E9A1,#F76C6C, #A8D0E6);
     color: white;
     transition: all 0.3s ease;
 }
 
 .navbar__links:hover {
-    color: #9518fc;
+    color: #BF8B78;
     transition: al 0.3s ease;
 }
 
@@ -191,53 +192,57 @@
 
 /* Hero Section */
 .hero {
-    background: black;
-    background: linear-gradient(to right, #161616, black);
-    padding: 200px 0;
+    background: #EAEAEA;
+    padding: 100px 0;
 }
 
-.hero__container {
+.hero__container, .main__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  height: 90%;
+  z-index: 1;
+  width: 100%;
+  max-width: 1300px;
+  padding: 0 50px;
+}
+
+.hero__img--container{
+  width:300px;
+  height:300px;
+  border-radius:50%;
+  margin-left: 100px;
+  overflow:hidden;
+  box-shadow:0 0 10px gray;
+}
+
+.hero__img--card{
+    width: 300px;
+    height:300px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    max-width: 1200px;
-    margin: -125px auto;
-    height: 90%;
-    text-align: center;
-    padding: 30px;
+    color: #fff;
 }
 
-.hero__heading {
-    font-size: 100px;
-    margin-bottom: 24px;
-    color: white;
+.link_icon {
+  width:50px;
+  height: 50px;
+  background-color: #BF8B78;
+  border-radius:50%;
+  box-shadow: 0 0 5px gray;
+  margin-top:20px;
 }
 
-.hero__heading span {
-    background: #833ab4;
-    background: -webkit-linear-gradient(to right, #fbc045,#fd1d1d, #833ab4);
-    background: linear-gradient(to right, #fbc045,#fd1d1d, #833ab4);
-    background-size: 100%;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -mo-text-fill-color: transparent;
-}
-
-.hero__desc {
-    font-size: 60px;
-    background: #da22ff;
-    background: -webkit-linear-gradient(to right, #9114ff,#da22ff);
-    background: linear-gradient(to right, #fbc045,#fd1d1d);
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
+.link_img img {
+  width:30px;
+  height: 30px;
 }
 
 .highlight {
-    border-bottom: 4px solid rgb(132, 0, 255);
+    border-bottom: 4px solid #BF8B78;
 }
 
 @media screen and (max-width: 768px) {
@@ -252,50 +257,22 @@
 
 /* About  Section */
 .main {
-    background-color: #131313;
+  background: #EAEAEA;
     padding: 10rem 0;
 }
 
-.main__container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-    height: 90%;
-    z-index: 1;
-    width: 100%;
-    max-width: 1300px;
-    padding: 0 50px;
-}
+
 
 .main__content {
-    color: #fff;
+    color: #BF8B78;
     width: 100%;
 }
 
 .main__content h1 {
-    font-size: 2rem;
-    background-color: #ff8177;
-    background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
-    background-size: 100%;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-    margin-bottom: 32px;
+    font-size: 1rem;
+   
 }
 
-.main__content h2 {
-    font-size: 4rem;
-    background: #da22ff;
-    background: -webkit-linear-gradient(to right, #9114ff,#da22ff);
-    background: linear-gradient(to right, #fbc045,#fd1d1d);
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-}
 
 .main__content p {
     margin-top: 1rem;
@@ -305,9 +282,9 @@
 
 .main__btn {
     font-size: 1.8rem;
-    background: #833ab4;
-    background: -webkit-linear-gradient(to right, #fbc045,#fd1d1d, #833ab4);
-    background: linear-gradient(to right, #fbc045,#fd1d1d, #833ab4);
+    background: #F76C6C;
+    background: -webkit-linear-gradient(to right, #fbc045,#fd1d1d, #F76C6C);
+    background: linear-gradient(to right, #fbc045,#fd1d1d, #F76C6C);
     padding: 20px 60px;
     color: white;
     border: none;
@@ -347,18 +324,19 @@
 
 .main__img--container {
     text-align: center;
+    width: 200px;
+    height:200px;
 }
 
 .main__img--card {
-    margin: 10px;
-    height:500px;
-    width: 500px;
-    border-radius: 10px;
+    margin-left: 100px;
+    width: 200px;
+    height:200px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     color: #fff;
-    background-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100%);
+    border-radius: 30px;
 }
 
 .fa-layer-group,
@@ -445,7 +423,7 @@
 
 /* Services Section */
 .services {
-    background: #131313;
+  background: #EAEAEA;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -505,7 +483,7 @@
     background-image: linear-gradient(
       -225deg,
       #231557 0%,
-      #44107a 29%,
+      #F76C6C 29%,
       #ff1361 67%,
       #fff800 100%
     );
@@ -561,7 +539,7 @@
 
   /* Footer CSS */
 .footer__container {
-    background-color: #131313;
+    background-color: #EAEAEA;
     padding: 5rem 0;
     display: flex;
     flex-direction: column;
