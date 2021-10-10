@@ -55,9 +55,19 @@
                 </a>
               </div>
               <div class="link_icon">
-                <div class="link_img">
-                  <img alt="Email" src="images/email.png">
+                <a href="#openModal5">
+                  <div class="link_img">
+                    <img alt="Email" src="images/email.png">
+                  </div>
+                </a>
+                <div id="openModal5" class="modalDialog">
+                  <div>
+                    <a href="#close" title="Close" class="close">X</a>
+                    <p><b>Personal Email</b>: kcgalee@gmail.com</p>
+                    <p><b>School Email</b>: gw2217@wayne.edu</p>
+                  </div>
                 </div>
+
               </div>
               <div class="link_icon">
                 <a href="documents/Lee_Kylie_Resume.pdf" target="_blank">
@@ -125,31 +135,35 @@
             </div>
         </div>
     </div>
-
     <!-- Projects Section -->
-    <div class="projects" id="projects">
+      <div class="projects" id="projects">
         <h1>Projects / Experiences</h1>
-        <div class="projects__wrapper">
-          <div class="projects__card" id="close">
-            <h2>Wilson Adaptive Technologies Website</h2>
-            <div class="popup" onclick="myFunction()">
-              <div class="projects__btn"><button>Learn More</button></div>
-              <span class="popuptext" id="myPopup">
-                <a class="close" href="#projects__card">&times;</a>
+          <div class="projects__wrapper">
+            <div class="projects__card">
+              <h2>Wilson Adaptive Technologies Website</h2>
+              <a href="#openModal1">
+                <div class="projects__btn"><button>Learn More</button></div>
+              </a>
+            </div>
+            <div id="openModal1" class="modalDialog">
+              <div>
+                <a href="#close" title="Close" class="close">X</a>
                 <ul>
                   <li>Led  a  team  of  3  front-end  developers  to  design  and  build  a  website  focused  on  user  accessibility  and  readability</li>
                   <li>Recognized as  one  of  top  2  teams  out  of  10  that  wasworking  with  the  start  up  for  bringing  and  accomplishing goal-oriented  ideas  to  the  CEO  in  bi-weekly  meetings</li>
                   <li><a href="https://wilsonadaptive.com/" target="_blank">Wilson Adaptive Technologies</a></li>
                 </ul>
-              </span>
+              </div>
             </div>
-          </div> 
-          <div class="projects__card" id="close">
-            <h2>Artificial Intelligence IT Chatbot Website</h2>
-            <div class="popup" onclick="myFunction()">
-              <div class="projects__btn"><button>Learn More</button></div>
-              <span class="popuptext" id="myPopup">
-                <a class="close" href="#projects__card">&times;</a>
+            <div class="projects__card">
+              <h2>Artificial Intelligence IT Chatbot Website</h2>
+              <a href="#openModal2">
+                <div class="projects__btn"><button>Learn More</button></div>
+              </a>
+            </div>
+            <div id="openModal2" class="modalDialog">
+              <div>
+                <a href="#close" title="Close" class="close">X</a>
                 <ul>
                   <li>Directed the design initiative of an AI Chat bot focused on the deliverance of IT guidance as part of the front-end
                     development team</li>
@@ -157,48 +171,58 @@
                     5 member team</li>
                   <li><a href="https://project-mackenzie-bot.herokuapp.com/" target="_blank">Mackenzie Chatbot</a></li>
                 </ul>
-              </span>
+              </div>
             </div>
-          </div>
-          <div class="projects__card" id="close">
-            <h2>Wayne State University Industry Mentorship</h2>
-            <div class="popup" onclick="myFunction()">
-              <div class="projects__btn"><button>Learn More</button></div>
-              <span class="popuptext" id="myPopup">
-                <a class="close" href="#projects__card">&times;</a>
+            <div class="projects__card">
+              <h2>Wayne State University Industry Mentorship</h2>
+              <a href="#openModal3">
+                <div class="projects__btn"><button>Learn More</button></div>
+              </a>
+            </div>
+            <div id="openModal3" class="modalDialog">
+              <div>
+                <a href="#close" title="Close" class="close">X</a>
                 <ul>
                   <li>Accepted as 1 of 9 Mentees to receive mentorship from a WSU alumni</li>
                   <li>Demonstrated curiosity and rapid learning ability for the development of the Ford Motor Company APA Website
                     utilizing agile methodology, HTML, and CSS</li>
                 </ul>
-              </span>
+              </div>
             </div>
-          </div>
-          <div class="projects__card" id="close">
-            <h2>Society of Computer Developers Website</h2>
-            <div class="popup" onclick="myFunction()">
-              <div class="projects__btn"><button>Learn More</button></div>
-              <span class="popuptext" id="myPopup">
-                <a class="close" href="#projects__card">&times;</a>
+            <div class="projects__card">
+              <h2>Society of Computer Developers Website</h2>
+              <a href="#openModal4">
+                <div class="projects__btn"><button>Learn More</button></div>
+              </a>
+            </div>
+            <div id="openModal4" class="modalDialog">
+              <div>
+                <a href="#close" title="Close" class="close">X</a>
                 <ul>
                   <li>Currently in progress!</li>
                   <li>Leading a team of web developers to create a website for the organization</li>
                   <li>Focusing on user experience for guest speakers, and potential and current members as a </li>
                 </ul>
-              </span>
+              </div>
             </div>
-          </div>
-        </div>
-      </div>
 
-  
+            
+          </div>    
+      </div>
       <!-- Footer Section -->
       <div class="footer__container">
         <div class="footer__links">
             <div class="footer__link--items">
               <h2>Contact</h2>
               <a href="https://www.linkedin.com/in/kylie-lee-8477091b5/" target="_blank">LinkedIn</a> 
-              <a href="/">Email</a>
+              <a href="#openModal5">Email</a>
+              <div id="openModal5" class="modalDialog">
+                <div>
+                  <a href="#close" title="Close" class="close">X</a>
+                  <p><b>Personal Email</b>: kcgalee@gmail.com</p>
+                  <p><b>School Email</b>: gw2217@wayne.edu</p>
+                </div>
+              </div>
               <a href="documents/Lee_Kylie_Resume.pdf" target="_blank">Resume</a> 
             </div>
         </div>
