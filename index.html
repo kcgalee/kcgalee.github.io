@@ -41,21 +41,30 @@
               <img alt="profile pic" src="images/profile.jpg">
             </div>
         </div>
-        <div class="main__content">
-            <h4>Hello!</h4>
-            <h1>I'm Kylie, an aspiring software developer currently based in Detroit, MI.<br/> I currently attend Wayne State University studying Computer Science!</h1>
+        <div class="hero__content">
+            <p>Hello!</p>
+            <h2>I'm Kylie, an aspiring software developer currently based in Detroit, MI.</h2>
             <h2></h2>
-            <p>Lorem Ipsum</p>
+            <p>Scroll down to learn more about me!</p>
             <div class="container">
               <div class="link_icon">
-                <div class="link_img">
-                  <img alt="profile pic" src="images/LI-In-Bug.png">
-                </div>
+                <a href="https://www.linkedin.com/in/kylie-lee-8477091b5/" target="_blank">
+                  <div class="link_img">
+                    <img alt="Linked-In" src="images/LI-In-Bug.png">
+                  </div>
+                </a>
               </div>
               <div class="link_icon">
                 <div class="link_img">
-                  <img alt="profile pic" src="images/email.png">
+                  <img alt="Email" src="images/email.png">
                 </div>
+              </div>
+              <div class="link_icon">
+                <a href="documents/Lee_Kylie_Resume.pdf" target="_blank">
+                  <div class="link_img">
+                    <img alt="Resume" src="images/resume.png">
+                  </div>
+                </a>
               </div>
             </div>
         </div>
@@ -79,8 +88,20 @@
                     <div class="progress"></div>
                   </div>
                 </div>
+                <div class="container">
+                  <p>HTML/CSS</p>
+                  <div class="progress-bar">
+                    <div class="progress"></div>
+                  </div>
+                </div>
+                <div class="container">
+                  <p>JavaScript</p>
+                  <div class="progress-bar">
+                    <div class="progress"></div>
+                  </div>
+                </div>
             </div>
-            <div class="main__content">
+            <div class="main__content" style="margin-left:-20px;">
               <div class="info__content">
                 <div class="info">school</div>
                   <p>Wayne State University</p>
@@ -90,111 +111,79 @@
                   <p>Computer Science</p>
               </div>
               <div class="info__content">
-                <div class="info">school</div>
-                  <p>Wayne State University</p>
+                <div class="info">expected graduation</div>
+                  <p>December 2022</p>
+              </div>
+              <div class="info__content">
+                <div class="info">main interests</div>
+                  <p>Frontend Development (Web and Mobile)</p>
+              </div>
+              <div class="info__content">
+                <div class="info">mbti</div>
+                  <p>ENFP!</p>
               </div>
             </div>
         </div>
     </div>
 
-    <!-- Services Section -->
+    <!-- Projects Section -->
     <div class="projects" id="projects">
-        <h1>projects</h1>
+        <h1>Projects / Experiences</h1>
         <div class="projects__wrapper">
-          <div class="projects__card">
-            <h2>Custom Colorways</h2>
-            <div class="popup" onclick="myFunction()">Click me to toggle the popup!
-              <span class="popuptext" id="myPopup">A Simple Popup!</span>
+          <div class="projects__card" id="close">
+            <h2>Wilson Adaptive Technologies Website</h2>
+            <div class="popup" onclick="myFunction()">
+              <div class="projects__btn"><button>Get Started</button></div>
+              <span class="popuptext" id="myPopup">
+                <a class="close" href="#projects__card">&times;</a>
+                A Simple Popup!</span>
+            </div>
+          </div> 
+          <div class="projects__card" id="close">
+            <h2>Artificial Intelligence IT Chatbot Website</h2>
+            <div class="popup" onclick="myFunction()">
+              <div class="projects__btn"><button>Get Started</button></div>
+              <span class="popuptext" id="myPopup">
+                <a class="close" href="#projects__card">&times;</a>
+                A Simple Popup!</span>
             </div>
           </div>
-          <div class="projects__card">
-            <h2>Are you Ready?</h2>
-            <p>Take the lepa</p>
-            <div class="projects__btn"><button>Get Started</button></div>
+          <div class="projects__card" id="close">
+            <h2>Wayne State University Industry Mentorship</h2>
+            <div class="popup" onclick="myFunction()">
+              <div class="projects__btn"><button>Get Started</button></div>
+              <span class="popuptext" id="myPopup">
+                <a class="close" href="#projects__card">&times;</a>
+                A Simple Popup!</span>
+            </div>
           </div>
-          <div class="projects__card">
-            <h2>Full Gradients</h2>
-            <p>100 Combinations</p>
-            <div class="projects__btn"><button>Get Started</button></div>
-          </div>
-          <div class="projects__card">
-            <h2>Infinite Choices</h2>
-            <p>1000's of colors</p>
-            <div class="projects__btn"><button>Get Started</button></div>
+          <div class="projects__card" id="close">
+            <h2>Society of Computer Developers Website</h2>
+            <div class="popup" onclick="myFunction()">
+              <div class="projects__btn"><button>Get Started</button></div>
+              <span class="popuptext" id="myPopup">
+                <a class="close" href="#projects__card">&times;</a>
+                A Simple Popup!</span>
+            </div>
           </div>
         </div>
       </div>
 
-    <!-- Features Section -->
-    <div class="main" id="sign-up">
-        <div class="main__container">
-          <div class="main__content">
-            <h1>Join Our Team</h1>
-            <h2>Sign Up Today</h2>
-            <p>See what makes us different</p>
-            <button class="main__btn"><a href="#">Sign Up</a></button>
-          </div>
-          <div class="main__img--container">
-            <div class="main__img--card" id="card-2">
-              <i class="fas fa-users"></i>
-            </div>
-          </div>
-        </div>
-      </div>
   
       <!-- Footer Section -->
       <div class="footer__container">
         <div class="footer__links">
           <div class="footer__link--wrapper">
             <div class="footer__link--items">
-              <h2>About Us</h2>
-              <a href="/sign__up">How it works</a> <a href="/">Testimonials</a>
-              <a href="/">Careers</a> <a href="/">Terms of Service</a>
+              <h2>Contact</h2>
+              <a href="https://www.linkedin.com/in/kylie-lee-8477091b5/" target="_blank">LinkedIn</a> 
+              <a href="/">Email</a>
+              <a href="documents/Lee_Kylie_Resume.pdf" target="_blank">Resume</a> 
             </div>
-            <div class="footer__link--items">
-              <h2>Contact Us</h2>
-              <a href="/">Contact</a> <a href="/">Support</a>
-              <a href="/">Destinations</a>
-            </div>
-          </div>
-          <div class="footer__link--wrapper">
-            <div class="footer__link--items">
-              <h2>Videos</h2>
-              <a href="/">Submit Video</a> <a href="/">Ambassadors</a>
-              <a href="/">Agency</a>
-            </div>
-            <div class="footer__link--items">
-              <h2>Social Media</h2>
-              <a href="/">Instagram</a> <a href="/">Facebook</a>
-              <a href="/">Youtube</a> <a href="/">Twitter</a>
-            </div>
+            
           </div>
         </div>
-        <section class="social__media">
-          <div class="social__media--wrap">
-            <div class="footer__logo">
-              <a href="/" id="footer__logo">COLOR</a>
-            </div>
-            <p class="website__rights">© COLOR 2020. All rights reserved</p>
-            <div class="social__icons">
-              <a href="/" class="social__icon--link" target="_blank"
-                ><i class="fab fa-facebook"></i
-              ></a>
-              <a href="/" class="social__icon--link"
-                ><i class="fab fa-instagram"></i
-              ></a>
-              <a href="/" class="social__icon--link"
-                ><i class="fab fa-youtube"></i
-              ></a>
-              <a href="/" class="social__icon--link"
-                ><i class="fab fa-linkedin"></i
-              ></a>
-              <a href="/" class="social__icon--link"
-                ><i class="fab fa-twitter"></i
-              ></a>
-            </div>
-          </div>
-        </section>
+       
       </div>
 
     <script src="app.js"></script>
