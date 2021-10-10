@@ -323,14 +323,12 @@ body {
 }
 
  .progress{
-  width: 80%; 
   background-color: #BF8B78; 
-  animation: progressAnimation 10s;
+  animation: progressAnimation 3s;
 }
 
 @keyframes progressAnimation {
   0%   { width: 5%; background-color: #F9BCCA;}
-  100% { width: 80%; background-color: #BF8B78; }
 }
 
 .info__content {
