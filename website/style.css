@@ -41,8 +41,6 @@ body {
     background-color: #BF8B78;
     background-image: linear-gradient(to top, #BF8B78 0%, #ffb199 100%);
     background-size: 100%;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
     display: flex;
@@ -620,7 +618,7 @@ body {
   
   @media screen and (max-width: 820px) {
     .footer__links {
-      padding-top: 2rem;argin-bottom: 2rem;
+      padding-top: 2rem;margin-bottom: 2rem;
     }
     .footer__link--wrapper {
       flex-direction: column;
