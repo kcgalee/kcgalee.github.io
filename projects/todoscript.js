@@ -21,9 +21,10 @@ var app = new function() {
             for(i=0;i<this.tasks.length;i++){
                 data+='<tr>';
                 data+='<td>'+(i+1)+'. '+this.tasks[i]+'</td/>';
-                data+='<td><button onclick="app.Edit('+i+')" class="btn btn-warning">Edit</button></td>'
-                data+='<td><button onclick="app.Delete('+i+')" class="btn btn-danger">Delete</button></td>'
-                data+='</tr>'
+                data+='<td><div class="dropdown-container" tabindex="-1"><div class="three-dots"></div><div class="dropdown">';
+                data+='<button onclick="app.Edit('+i+')" class="btn btn-warning">Edit</button><button onclick="app.Delete('+i+')" class="btn btn-danger">Delete</button>';
+                data+='</div></div></td>';
+                data+='</tr>';
             }
         }
         this.Count(this.tasks.length);
