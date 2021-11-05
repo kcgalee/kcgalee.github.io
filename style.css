@@ -38,16 +38,18 @@ body {
 }
 
 #navbar__logo {
-    background-color: #BF8B78;
-    background-image: linear-gradient(to top, #BF8B78 0%, #ffb199 100%);
-    background-size: 100%;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    text-decoration: none;
-    font-size: 2rem;
+  background-color: #BF8B78;
+  background-image: linear-gradient(to top, #BF8B78; 0%, #ffb199 100%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 2rem;
 }
 
 .navbar__menu {
